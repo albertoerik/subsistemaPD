@@ -1,0 +1,142 @@
+extends layout2
+block content
+    .row
+        nav.navbar.navbar-inverse
+            .container-fluid
+                .collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
+                    ul.nav.navbar-nav.col-md-12
+                        li(class="col-md-1")
+                            a(href="Trabajador")
+                                span(class="glyphicon glyphicon-home", aria-hidden="true")
+                        li(class="col-md-2")
+                            a(href='NuevoParteD',id='btnNParteD') NUEVO PARTE DIARIO
+                        li(class="dropdown col-md-3")
+                            a(href="#", class="dropdown-toggle", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") LISTAR PARTES DIARIOS
+                        li(class="dropdown col-md-2")
+                            a(href="#") SALIR
+                        li(class="dropdown col-md-2 col-md-offset-3 avatarrr")
+    .row.col-md-12(style="background:#CDD6FC")(id='Cabecera')
+        h3.col-md-4 MAÑANA
+        h1.col-md-6 RESIDENCIA
+        h3.col-md-2 N° ITEM
+    .row.col-md-12(style="background:#CDD6FC")(id='Cabecera')
+        .col-md-2
+            input.input-sm(type='text',id='entradaM', placeholder='ENTRADA')
+        .col-md-2
+            input.input-sm(type='text',id='salidaM', placeholder='SALIDA')
+        h4.col-md-6(id='nombreResidencia') Acasio
+        .col-md-2
+            input.input-sm(type='text',id='item')
+    .row.col-md-12(style="background:#CDD6FC")(id='Cabecera')
+        h3.col-md-4 TARDE
+        H3.col-md-6 LUGAR O SECTOR
+        h3.col-md-2 N° INTERNO
+    .row.col-md-12(style="background:#CDD6FC")(id='Cabecera')
+        .col-md-2
+            input.input-sm(type='text',id='entradaT', placeholder='ENTRADA')
+        .col-md-2
+            input.input-sm(type='text',id='salidaT', placeholder='SALIDA')
+        .col-md-6
+            select.input-sm.Tramos     
+        .col-md-2
+            select.input-sm.Equipos 
+    .row.col-md-12(style="background:#CDD6FC")
+        .form-group
+    .row.col-md-12(style="background:#CDD6FC")
+        .form-group
+            
+    .row.col-md-12
+        h3 ELABORAR UNA LISTA DE LA CLASE DE TRABAJO, EL TIEMPO REALIZADO, EN REPARACION O ACTIVIDAD
+    .row.col-md-11.col-md-offset-1
+        input.col-md-1.num2.input-lg(type="text", placeholder='Inicio',id='Hinicio1',maxlength="5")
+        input.col-md-1.num2.input-lg(type="text", placeholder='Fin',id='Hfin1', maxlength="5")
+        input.col-md-9.contenidoPD.input-lg(id="Detalle1" type="text" placeholder='Escriba en detalle el trabajo realizado..')
+    .row.col-md-11.col-md-offset-1(id='Fila1Coculta1')
+        input.col-md-1.num2.input-lg(type="text", placeholder='Inicio',id='Hinicio2',maxlength="5")
+        input.col-md-1.num2.input-lg(type="text", placeholder='Fin',id='Hfin2',maxlength="5")
+        input.col-md-9.contenidoPD.input-lg(id="Detalle2" type="text" placeholder='Escriba en detalle el trabajo realizado..')
+    .row.col-md-11.col-md-offset-1(id='Fila1Coculta2')
+        input.col-md-1.num2.input-lg(type="text", placeholder='Inicio',id='Hinicio3',maxlength="5")
+        input.col-md-1.num2.input-lg(type="text", placeholder='Fin',id='Hfin3',maxlength="5")
+        input.col-md-9.contenidoPD.input-lg(id="Detalle3" type="text" placeholder='Escriba en detalle el trabajo realizado..')
+    .row.col-md-11.col-md-offset-1(id='Fila1Coculta3')
+        input.col-md-1.num2.input-lg(type="text", placeholder='Inicio',id='Hinicio4',maxlength="5")
+        input.col-md-1.num2.input-lg(type="text", placeholder='Fin',id='Hfin4',maxlength="5")
+        input.col-md-9.contenidoPD.input-lg(id="Detalle4" type="text" placeholder='Escriba en detalle el trabajo realizado..')
+    .row.col-md-11.col-md-offset-1(id='Fila1Coculta4')
+        input.col-md-1.num2.input-lg(type="text", placeholder='Inicio',id='Hinicio5',maxlength="5")
+        input.col-md-1.num2.input-lg(type="text", placeholder='Fin',id='Hfin5',maxlength="5")
+        input.col-md-9.contenidoPD.input-lg(id="Detalle5" type="text" placeholder='Escriba en detalle el trabajo realizado..')
+    .row.col-md-11.col-md-offset-1(id='Fila1Coculta5')
+        input.col-md-1.num2.input-lg(type="text", placeholder='Inicio',id='Hinicio6',maxlength="5")
+        input.col-md-1.num2.input-lg(type="text", placeholder='Fin',id='Hfin6',maxlength="5")
+        input.col-md-9.contenidoPD.input-lg(id="Detalle6" type="text" placeholder='Escriba en detalle el trabajo realizado..')
+    .row.col-md-11.col-md-offset-1(id='Fila1Coculta6')
+        input.col-md-1.num2.input-lg(type="text", placeholder='Inicio',id='Hinicio7',maxlength="5")
+        input.col-md-1.num2.input-lg(type="text", placeholder='Fin',id='Hfin7',maxlength="5")
+        input.col-md-9.contenidoPD.input-lg(id="Detalle7" type="text" placeholder='Escriba en detalle el trabajo realizado..')
+    .row.col-md-11.col-md-offset-1(id='Fila1Coculta7')
+        input.col-md-1.num2.input-lg(type="text", placeholder='Inicio',id='Hinicio8',maxlength="5")
+        input.col-md-1.num2.input-lg(type="text", placeholder='Fin',id='Hfin8',maxlength="5")
+        input.col-md-9.contenidoPD.input-lg(id="Detalle8" type="text" placeholder='Escriba en detalle el trabajo realizado..')        
+
+    .row.col-md-12
+        h3.col-md-6.col-md-offset-1 LECTURA DE HOROMETRO
+        h3.col-md-4 COMBUSTIBLES Y LUBRICANTES
+    .row.col-md-12
+        .col-md-3.col-md-offset-1
+            input.input-lg(type='text',id='inicioH', placeholder='INICIO')
+        .col-md-3
+            input.input-lg(type='text',id='finH', placeholder='FIN')
+        .col-md-2
+            input.input-lg(type='text',id='CantidadCombustible', placeholder='CANTIDAD')
+        .col-md-2
+            select.input-lg(id='TipoCombus')
+                option Litros de Gasolina
+                option Litros de Diesel
+                option Litros de Kerosene
+                option Litros de Grasa
+        .col-md-1
+    .row.col-md-12
+        .form-group
+    link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    .row.col-md-12
+    #vale.modal.fade(tabindex='-1', role='dialog')
+      .modal-dialog
+        .modal-content
+          .modal-header(style="background:#CDD6FC")
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span.glyphicon.glyphicon-remove-circle(aria-hidden='true', style="color: black") 
+            h4.modal-title(style="font-weight:600;font-size: 20px;color:#0B5289") AUTORIZACION DE ENTREGA DE COMBUSTIBLES Y LUBRICANTES
+          .modal-body(style="overflow-y:hidden")
+            .row
+                h3(style="font-weight:600;padding-left: 30px;font-size: 20px").col-md-5 ENTREGUESE A:   
+                h3.col-md-7(style="color:#757575;font-size: 20px") Jose perez limachi
+            .row
+                h3.col-md-5(style="font-weight:600;padding-left: 30px;font-size: 20px") VEHICULO:  
+                h3(style="color:#757575;font-size: 20px").col-md-7 Camioneta
+            .row
+                h3.col-md-5(style="font-weight:600;padding-left: 30px;font-size: 20px") Nº INTERNO:  
+                h3.col-md-7(style="color:#757575;font-size: 20px") PPW-012
+            .row
+                h3.col-md-5(style="font-weight:600;padding-left: 30px;font-size: 20px") CANTIDAD:
+                h3.col-md-1(style="color:#757575;font-size: 20px") 40
+                h3.col-md-4(style="color:#757575;font-size: 20px") Litros de Gasolina   
+            .row
+                h3.col-md-5(style="font-weight:600;padding-left: 30px;font-size: 20px") PARA USO EN:  
+                h3.col-md-7(style="color:#757575;font-size: 20px") cualquier cosa
+            .row
+                h3.col-md-5(style="font-weight:600;padding-left: 30px;font-size: 20px") LUGAR:
+                h3.col-md-7(style="color:#757575;font-size: 20px") Acasio
+            .row
+                h3.col-md-5(style="font-weight:600;padding-left: 30px;font-size: 20px") FECHA:  
+                input.col-md-5(type='text',id='Fechavale')
+          .modal-footer(style="background:#CDD6FC")
+            button.btn.btn-primary.col-md-4.col-md-offset-4(type='button', data-dismiss='modal',style="font-weight:600;font-size: 16px") ACEPTAR
+    .row.col-md-12
+        .form-group
+    .row.col-md-12
+        .col-md-3.col-md-offset-2
+            input.btn.btn-danger.btn-lg(data-toggle='modal', href='#vale', type='submit', id='btnVale', value='LLENAR VALE')
+        .col-md-3.col-md-offset-2
+            input.btn.btn-primary.btn-lg(type='submit', id='btnEnviar', value='ENVIAR')

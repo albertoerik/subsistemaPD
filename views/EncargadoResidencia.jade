@@ -1,0 +1,30 @@
+extends layout2
+
+block content
+    .MenuArriba1
+        nav
+            ul
+                li
+                    a(title='consignaciones', href='solicitar consignaciones') CONSIGNACIONES
+    .bodyNoticias
+        .formNoticia
+            .navii
+                ul
+                    li.etNoticia
+                        textarea(type='text', placeholder='Publicar Noticia..',id='textNoticiaNew')
+                    li.btnNoticia
+                            form(method="post", enctype="multipart/form-data")
+                                input(type='file',id="nombre", placeholder="Subir Imagen")
+                                input(type="submit", value="Enviar",id='btnNoticiaNew')
+                                input(id="datetimepicker", type="text")
+
+        h1 NOTICIAS
+        .noticias
+            p.dirImagen #{dirImagen}
+                .cajaNoticia
+                    .cajaPosicion
+                        strong
+                        span
+                        span.fecha
+                        p
+                        img.imagenNoti

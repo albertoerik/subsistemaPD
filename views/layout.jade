@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='/stylesheets/calendar.css')
+    link(rel='stylesheet', href='/stylesheets/fullcalendar.css')
+    link(rel='stylesheet', href='/stylesheets/fullcalendar.min.css')
+    link(rel='stylesheet', href='/stylesheets/fullcalendar.print.css')
+
+    script(type="text/javascript").
+    script(src="/javascripts/jquery.js")
+    script(src="/socket.io/socket.io.js")
+    script(src="/javascripts/login.js")
+    script(src="/javascripts/jquery.calendar.js")
+    script(src="/javascripts/jquery.calendar.min.js")
+    script(src="/javascripts/principalpartediario.js")
+    script(src="/javascripts/moment.min.js")
+    script(src="/javascripts/fullcalendar.js")
+    script(src="/javascripts/fullcalendar.min.js")
+
+
+  body
+    block content
